@@ -1,0 +1,67 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text-gradient{
+  background: linear-gradient(45deg, #f59e0b, #16a34a, #f59e0b);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimation 4s ease-in-out infinite;
+}
+
+@keyframes textAnimation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.glow-boder{
+  box-shadow: 0 0 60px rgba(22, 163, 74, 0.1),
+   0 0 60px rgba(124, 58, 237, 0.1), 
+   0 0 60px rgba(245, 158, 11, 0.1);
+}
+
+.animate-rotate-border {
+  background: linear-gradient(90deg, #f59e0b, #7c3aed, #16a34a);
+  animation: rotateAnimation 3s linear infinite;
+  z-index: 0;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*  */
