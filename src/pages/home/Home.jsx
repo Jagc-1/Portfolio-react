@@ -22,13 +22,14 @@ const Home = () => {
         {/* Content Section*/}
         <div className="flex-1 h-auto space-y-10">
           <h1 className="text-5xl text-neutral-100 font-bold">
-            Hi!, I'm{" "}
+            Hey, I'm{" "}
             <span className="text-gradient ">Johan Campos</span>
           </h1>
 
           <div className="space-y-6 md:pr-16 pr-0">
             <p className="text-lg text-neutral-400 font-normal">
-              I am a fullstack developer.
+              Desarrollador Full Stack, especializado en convertir ideas en soluciones digitales completas
+               y efectivas.
             </p>
           </div>
 
@@ -55,7 +56,7 @@ const Home = () => {
 
        {/*Top Highlights */}
       <div className="w-full space-y-8">
-        <h1 className="text-3xl text-neutral-200 font-bold">Top Jac Highlights   </h1>
+        <h1 className="text-3xl text-neutral-200 font-bold">Top Johan Highlights   </h1>
         <div className="flex items-center gap-6 flex-wrap">
           <JohanCard Icon={FaReact} className={`group-hover:text-blue-700 `} />
           <JohanCard Icon={FaHtml5} className={`group-hover:text-red-700 `} /> {/* HTML */}

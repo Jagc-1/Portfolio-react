@@ -3,6 +3,7 @@ import Home from "./pages/home/Home";
 import Project from "./pages/project/Project";
 import About from "./pages/about/About";
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           </Routes>
 
           {/* Footer */}
+          <Footer />
         </div>
       </Router>
     </>
