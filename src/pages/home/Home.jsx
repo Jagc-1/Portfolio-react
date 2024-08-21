@@ -11,7 +11,10 @@ import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython } from 'react-icons/fa
 import { SiSpringboot, SiMysql, SiPostgresql,SiBootstrap } from 'react-icons/si'; // Importar íconos
 
 import Profile from "../../assets/Profile.png";
-import ImgProject from "../../assets/Profile.png";
+import ImgProject1 from "../../assets/pr1.png";
+import ImgProject2 from "../../assets/pr2.png";
+import ImgProject3 from "../../assets/pr3.png";
+import ImgProject4 from "../../assets/pr4.png";
 import { FaReact } from 'react-icons/fa';
 const Home = () => {
   return (
@@ -22,7 +25,7 @@ const Home = () => {
         {/* Content Section*/}
         <div className="flex-1 h-auto space-y-10">
           <h1 className="text-5xl text-neutral-100 font-bold">
-            Hey, I'm{" "}
+            Hey, I'm
             <span className="text-gradient ">Johan Campos</span>
           </h1>
 
@@ -34,7 +37,7 @@ const Home = () => {
           </div>
 
           <div className="flex items-center gap-x-5">
-            <Link to="/resume" download={true} className='w-fit px-8 h-11 bg-neutral-900/50 shadow rounded-xl flex items-center justify-center gap-x-2 hover:bg-green-900/5 border border-trasnsparent hover:border-green-800/80  ease-in-out duration-500'>
+            <Link to="https://www.canva.com/design/DAFBpelqcfM/DTUGHs8DhSU2oSdHoAsm1Q/edit?utm_content=DAFBpelqcfM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" download={true} className='w-fit px-8 h-11 bg-neutral-900/50 shadow rounded-xl flex items-center justify-center gap-x-2 hover:bg-green-900/5 border border-trasnsparent hover:border-green-800/80  ease-in-out duration-500'>
               Resume <HiOutlineDownload />
             </Link>
 
@@ -48,15 +51,15 @@ const Home = () => {
         {/* Image Section */}
         <div className="md:w-1/3 w-full h-auto flex items-center justify-center">
           <div className="relative w-full aspect-square rounded-full glow-boder">
-          <div className="absolute inset-0 rounded-full border-[6px] border-transparent animate-rotate-border"></div>
-          <img src={Profile} alt="Foto de perfil"  className='w-full h-full rounded-full object-contain object-center relative scale-120 bottom-3 right-2 z-index-10'/>
+          <div className="absolute inset-0 rounded-full border-[2px] border-transparent animate-rotate-border"></div>
+          <img src={Profile} alt="Foto de perfil"  className='w-full h-full rounded-full object-contain object-center relative scale-120 bottom-0.5  z-index-10'/>
           </div>
         </div>
       </div>
 
        {/*Top Highlights */}
       <div className="w-full space-y-8">
-        <h1 className="text-3xl text-neutral-200 font-bold">Top Johan Highlights   </h1>
+        <h1 className="text-3xl text-neutral-200 font-bold">Top  Highlights   </h1>
         <div className="flex items-center gap-6 flex-wrap">
           <JohanCard Icon={FaReact} className={`group-hover:text-blue-700 `} />
           <JohanCard Icon={FaHtml5} className={`group-hover:text-red-700 `} /> {/* HTML */}
@@ -83,11 +86,10 @@ const Home = () => {
 
           {/* Projects Cards*/}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
-
-            <ProjectCard img={ImgProject} title={'Memorie Game'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit'}/>
-            <ProjectCard img={ImgProject} title={'Memorie Game'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit'}/>
-            <ProjectCard img={ImgProject} title={'Memorie Game'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit'}/>
-            <ProjectCard img={ImgProject} title={'Memorie Game'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit'}/>
+          <ProjectCard img={ImgProject1} title={'Foods'} showLink={false} />
+          <ProjectCard img={ImgProject3} title={'Comic Web'} showLink={false}/>
+          <ProjectCard img={ImgProject2} title={'Inventario'} showLink={false}/>
+          <ProjectCard img={ImgProject4} title={'Memorie Game'} showLink={false}/>
           </div>
       </div>
     </Layout>

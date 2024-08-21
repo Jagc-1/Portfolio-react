@@ -1,21 +1,27 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import { Link } from 'react-router-dom'
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
 
-const projectCard = ({img,title,desc}) => {
+const ProjectCard = ({ img, title, desc, link, showLink = true }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
-    <Link to={'/projects'} className='w-full flex items-centerbg-transparent gap-x-3 hover:shadow-md hover:bg-green-900/5 border border-trasnsparent hover:border-green-800/80  py-3 px-0 hover:px-3 rounded-lg  ease-in-out duration-500'>
-       
-       <div className="w-16 h-16 rounded-lg bg-neutral-900/60 flex items-center justify-center p-1">
-            <img src={img} alt="Project Image" className="w-full h-full object-contain object-center rounded-lg" />
-       </div>
+    <div 
+      className={`relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform ${isExpanded ? 'h-auto' : 'h-60'} cursor-pointer group`}
+      onClick={() => setIsExpanded(!isExpanded)}
+    >
+      <img src={img} alt={title} className="w-full h-40 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
+      <div className={`p-4 bg-gray-800 text-gray-100 transition-all duration-300 ease-in-out ${isExpanded ? 'max-h-screen' : 'max-h-24 overflow-hidden'}`}>
+        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+        <p className={`text-sm ${isExpanded ? 'block' : 'hidden'}`}>{desc}</p>
+        {showLink && isExpanded && (
+          <a href={link} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-600 text-base mt-2 inline-block">
+            View More
+          </a>
+        )}
+      </div>
+    </div>
+  );
+};
 
-       <div className="space-y-0.5 flex-1">
-            <h1 className="text-base font-medium text-neutral-300">{title}</h1>
-            <small className="text-xs text-neutral-500 font-light line-clamp-1">{desc}</small>
-       </div>
-    </Link>
-  )
-}
-
-export default projectCard;
+export default ProjectCard;

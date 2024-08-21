@@ -15,7 +15,7 @@ const About = () => {
 
       {/* Intro Section */}
       <div className="space-y-8">
-        <h1 className="text-5xl text-neutral-200 font-bold">About Me</h1>
+        <h1 className="text-4xl text-neutral-200 font-bold ">Sobre Mí</h1>
 
         <div className="space-y-5">
           {/* Profile Section and Bio Section */}
@@ -42,45 +42,73 @@ const About = () => {
               <p className="md:text-lg text-sm text-neutral-400 font-normal">
                 ¿Interesado en colaborar? ¡Contáctame!
               </p>
-              <Link to={'/contact'} className="flex items-center gap-x-2 md:text-lg text-base text-neutral-500 gruoup-hover:text-green-600 font-normal ease-in-out duration-300">
-               Hire Me 
-               <FaArrowRightLong className="text-xl group-hover:translate-x-1 ease-in-out duration-500" />
-               </Link>
+              <a href="#contact" className="flex items-center gap-x-2 md:text-lg text-base text-neutral-500 group-hover:text-green-600 font-normal ease-in-out duration-300">
+    Hire Me 
+    <FaArrowRightLong className="text-xl group-hover:translate-x-1 ease-in-out duration-500" />
+  </a>
           </div>
         </div>
 
       {/* Bio Section */}
-      <p className="text-lg text-neutral-500 font-normal">
-          Me apasiona transformar conceptos abstractos en soluciones 
-          tecnológicas elegantes y efectivas. Mi enfoque se centra en construir sistemas robustos y escalables,
-         guiados por una arquitectura bien planificada y un código limpio. Cada proyecto es una oportunidad 
-         para innovar y optimizar, buscando siempre la máxima precisión y sostenibilidad. Fuera del desarrollo,
-          disfruto explorando nuevas tecnologías, resolviendo desafíos complejos y colaborando en iniciativas 
-          que buscan hacer una diferencia real en el mundo.
-      </p>
+      <div className="space-y-5">
+      <h1 className="text-2xl text-neutral-200 font-bold">Objetivos Profesionales</h1>
+        <ul className="list-disc list-inside space-y-2 text-lg text-neutral-500">
+          <li className="font-semibold">Desarrollar soluciones tecnológicas de alto impacto</li>
+          <li className="font-semibold">Especializarme en tecnologías emergentes</li>
+          <li className="font-semibold">Contribuir a la evolución del sector tecnológico</li>
+          <li className="font-semibold">Fomentar una cultura de aprendizaje y mejora continua</li>
+        </ul>
+
+        <h1 className="text-2xl text-neutral-200 font-bold">Visión</h1>
+        <p className="text-lg text-neutral-500 font-normal">
+            Transformo conceptos abstractos en soluciones tecnológicas elegantes y efectivas,
+             construyendo sistemas robustos y escalables con un enfoque en arquitectura sólida y código limpio. 
+             Busco innovar y optimizar en cada proyecto, explorando nuevas tecnologías y colaborando para generar 
+             un impacto real.
+        </p>
+
+        <h1 className="text-2xl text-neutral-200 font-bold">Misión</h1>
+        <p className="text-lg text-neutral-500 font-normal">
+        Mi misión es crear software que no solo cumple con los estándares técnicos, sino que redefine la 
+        forma en que interactuamos con la tecnología. Enfocado en una arquitectura ágil y una calidad excepcional,
+         desarrollo soluciones que son resilientes y adaptativas, diseñadas para anticipar y superar futuros 
+        desafíos mientras generan un impacto significativo y transformador.
+        </p>
+
+        <h1 className="text-2xl text-neutral-200 font-bold">Valores</h1>
+        <ul className="list-disc list-inside space-y-2 text-lg text-neutral-500">
+          <li className="flex flex-wrap justify-center gap-6">
+              <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Integridad</a>
+              <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Innovación</a>
+              <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Creatividad</a>
+              <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Colaboración</a>
+              <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Trabajo en equipo</a>
+              <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Adaptabilidad</a>
+          </li>
+        </ul>
+      </div>
 
 
         {/* Contact Section */}
-        <div className="space-y-4">
-          <h1 className="text-3xl text-neutral-200 font-bold">Contact Me</h1>
+        <div  id="contact" className="space-y-4">
+          <h1 className="text-3xl text-neutral-200 font-bold">Contactame</h1>
           <div className="space-y-3">
             <div className="flex items-center gap-x-3">
               <LiaHandPointer className="text-lg text-green-400 font-normal rotate-90" />
               <p className="md:block hidden text-base text-neutral-400 font-normal">Email:</p>
-              <Link to={'mailto:zqkKf@example.com'} className="text-base text-neutral-400 hover:text-green-500 font-normal ease-in-out duration-300">zqkKf@example.com</Link>
+              <Link to={'mailto:garciacamposjohan18@gmail.com'} className="text-base text-neutral-400 hover:text-green-500 font-normal ease-in-out duration-300">garciacamposjohan18@gmail.com</Link>
             </div>
 
             <div className="flex items-center gap-x-3">
               <LiaHandPointer className="text-lg text-green-400 font-normal rotate-90" />
               <p className="md:block hidden text-base text-neutral-400 font-normal">Instagram:</p>
-              <Link to={'mailto:zqkKf@example.com'} className="text-base text-neutral-400 hover:text-green-500 font-normal ease-in-out duration-300">xanthus_24</Link>
+              <Link to={'https://www.instagram.com/xanthus_24/'} className="text-base text-neutral-400 hover:text-green-500 font-normal ease-in-out duration-300">xanthus_24</Link>
             </div>
-
           </div>
         </div>
       </div>
 
-      {/* Johan Section */}
+      {/* Skills Section */}
       <div className="w-full space-y-8">
       <h1 className="text-3xl text-neutral-200 font-bold"> Skills  </h1>
       <div className="flex items-center gap-6 flex-wrap">
@@ -96,6 +124,24 @@ const About = () => {
           <JohanCard Icon={SiBootstrap} className={`group-hover:text-purple-900 `} /> {/* Bootstrap */}
         </div>
       </div>
+
+      {/* Competencias Section */}
+      <div className="p-8 bg-neutral-900 rounded-lg shadow-lg cursor-pointer">
+        <div className="text-center">
+            <h1 className="text-3xl font-extrabold text-neutral-100 mb-8">Competencias</h1>
+            <ul className="flex flex-wrap justify-center gap-6">
+                <li className="flex flex-wrap justify-center gap-6">
+                    <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Adaptación al cambio</a>
+                    <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Innovación</a>
+                    <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Creatividad</a>
+                    <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Habilidades Sociales</a>
+                    <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Trabajo en equipo</a>
+                    <a className="text-lg font-semibold text-neutral-300 hover:text-green-400 transition ease-in-out duration-300 transform hover:scale-105">Responsabilidad</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+
 
     </Layout>
   );
