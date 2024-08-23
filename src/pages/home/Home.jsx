@@ -25,7 +25,7 @@ const Home = () => {
         {/* Content Section*/}
         <div className="flex-1 h-auto space-y-10">
           <h1 className="text-5xl text-neutral-100 font-bold">
-            Hey, I'm
+            Hey, I'm{" "}
             <span className="text-gradient ">Johan Campos</span>
           </h1>
 

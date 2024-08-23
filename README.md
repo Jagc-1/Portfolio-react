@@ -1,6 +1,6 @@
 # 🚀 Welcome to My Digital Universe 🌌
 
-Hey there! I'm **[Your Name]**, a passionate Full Stack Developer with a knack for crafting dynamic and responsive web experiences. This portfolio is more than just a collection of projects—it's a glimpse into my world as a developer.
+Hey there! I'm Johan Campos, a passionate Full Stack Developer with a knack for crafting dynamic and responsive web experiences. This portfolio is more than just a collection of projects—it's a glimpse into my world as a developer.
 
 ## 🧩 What You'll Find Here
 
