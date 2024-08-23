@@ -63,5 +63,15 @@
   }
 }
 
+/* Estilo por defecto para el logo */
+.logo {
+  display: block; /* Muestra el logo por defecto en pantallas mayores a 600px */
+}
 
-/*  */
+/* Oculta el logo en pantallas de 600px o menos */
+@media (max-width: 1124px) {
+  .logo {
+    display: none; /* Oculta el logo en pantallas de 600px o menos */
+  }
+}
+

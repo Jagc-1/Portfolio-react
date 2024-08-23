@@ -50,14 +50,16 @@ const Home = () => {
 
         {/* Image Section */}
         <div className="md:w-1/3 w-full h-auto flex items-center justify-center">
-  <div className="relative w-full aspect-square rounded-full glow-border">
-    <div className="absolute inset-0 rounded-full border-[2px] border-transparent animate-rotate-border"></div>
-    <img 
-      src={Profile}  alt="Foto de perfil"  className='absolute rounded-full object-cover' 
-      style={{ width: 'calc(100% - 0.5cm)', height: 'calc(100% - 0.5cm)', top: '0.3cm', left: '0.3cm' }}
-    />
-  </div>
-</div>
+          <div className="relative w-full aspect-square rounded-full glow-border">
+            <div className="absolute inset-0 rounded-full border-[2px] border-transparent animate-rotate-border"></div>
+            <img 
+              src={Profile} 
+              alt="Foto de perfil"  
+              className='absolute rounded-full object-cover' 
+              style={{ width: 'calc(100% - 0.5cm)', height: 'calc(100% - 0.5cm)', top: '0.3cm', left: '0.3cm' }}
+            />
+          </div>
+        </div>
 
 
 
