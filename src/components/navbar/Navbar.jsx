@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import Logo from '../../assets/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -11,7 +12,7 @@ const Navbar = () => {
     <div className="w-full h-[8ch] bg-neutral-950 shadow-sm border-b border-neutral-900/50 lg:px-80 md:px-60 sm:px-7 px-4 flex justify-between">
       {/* Logo Section */}
       <div className="flex items-center ml-2"> {/* ml-4 agrega margen izquierdo */}
-        <img src="src/assets/logo.png" alt="Logo" className="w-20 h-auto" />
+        <img src={Logo} alt="Logo" className="w-20 h-auto" />
       </div>
 
 
