@@ -21,24 +21,28 @@ const Project = () => {
           img={ImgProject1} 
           title={'Foods'} 
           desc={'Es un sitio web diseñado para promocionar un restaurante o servicio de alimentos. '} 
+          date={"Campuslands -  Enero - 2024"}
           link={'https://github.com/Jagc-1/Foods.git'} 
         />
         <ProjectCard 
-          img={ImgProject2} 
+          img={ImgProject3} 
           title={'Comic Web'} 
           desc={'Es un proyecto web desarrollado con JavaScript, HTML y CSS que ofrece una experiencia inmersiva en el mundo de los personajes de Marvel y DC Comics.'} 
+          date={"Campuslands - Feberero - 2024"}
           link={'https://github.com/Jagc-1/comicWeb.git'} 
         />
         <ProjectCard 
-          img={ImgProject3} 
+          img={ImgProject2} 
           title={'Inventario'} 
           desc={'Es una página web diseñada para gestionar activos, marcas, personas, estados, tipos de personas, tipos de movimientos de activos, tipos de activos y asignaciones. '} 
+          date={"Campuslands - Marzo -2024"}
           link={'https://github.com/Jagc-1/Inventario-proyecto.git'} 
         />
         <ProjectCard 
           img={ImgProject4} 
           title={'Memorie Game'} 
           desc={'Es un divertido juego interactivo desarrollado utilizando HTML, CSS y JavaScript. Este juego pone a prueba tu memoria a través de un entretenido desafío visual y auditivo, diseñado para jugadores de todas las edades.'} 
+          date={" Diciembre - 2023"}
           link={'https://github.com/Jagc-1/MemoriesGame.git'} 
         />
 
@@ -46,6 +50,7 @@ const Project = () => {
           img={ImgProject5} 
           title={'Sistema de Gestión de Vuelos'} 
           desc={'Este proyecto de Sistema de Gestión de Vuelos se desarrolla utilizando Java y MySql.'} 
+          date={"Campuslands - Junio - 2024"}
           link={'hhttps://github.com/Jagc-1/airport.git'} 
         />
 
@@ -53,6 +58,7 @@ const Project = () => {
           img={"https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_1280.jpg"} 
           title={'Formulario de Registro'} 
           desc={'Este proyecto implementa un formulario de contacto y una tabla dinámica de usuarios utilizando Spring Boot y Thymeleaf.'} 
+          date={"Campuslands - Julio - 2024"}
           link={'hhttps://github.com/Jagc-1/FomularioRegistro'} 
         />
       </div>

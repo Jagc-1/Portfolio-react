@@ -37,7 +37,7 @@ const Home = () => {
           </div>
 
           <div className="flex items-center gap-x-5">
-            <Link to="https://www.canva.com/design/DAFBpelqcfM/DTUGHs8DhSU2oSdHoAsm1Q/edit?utm_content=DAFBpelqcfM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" download={true} className='w-fit px-8 h-11 bg-neutral-900/50 shadow rounded-xl flex items-center justify-center gap-x-2 hover:bg-green-900/5 border border-trasnsparent hover:border-green-800/80  ease-in-out duration-500'>
+            <Link to="https://www.canva.com/design/DAGOn-wCVJs/LY1bMSQdSyOPeJz48NGWCw/edit?utm_content=DAGOn-wCVJs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" download={true} className='w-fit px-8 h-11 bg-neutral-900/50 shadow rounded-xl flex items-center justify-center gap-x-2 hover:bg-green-900/5 border border-transparent hover:border-green-800/80  ease-in-out duration-500'>
               Resume <HiOutlineDownload />
             </Link>
 
@@ -86,7 +86,7 @@ const Home = () => {
 
           {/* Projects Cards*/}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
-          <ProjectCard img={ImgProject1} title={'Foods'} showLink={false} />
+          <ProjectCard img={ImgProject1} title={'Foods'}  showLink={false} />
           <ProjectCard img={ImgProject3} title={'Comic Web'} showLink={false}/>
           <ProjectCard img={ImgProject2} title={'Inventario'} showLink={false}/>
           <ProjectCard img={ImgProject4} title={'Memorie Game'} showLink={false}/>
