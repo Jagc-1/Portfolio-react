@@ -10,7 +10,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython } from 'react-icons/fa'; // Importar íconos
 import { SiSpringboot, SiMysql, SiPostgresql,SiBootstrap } from 'react-icons/si'; // Importar íconos
 
-import Profile from "../../assets/Profile.png";
+import Profile from "../../assets/About.png";
 import ImgProject1 from "../../assets/pr1.png";
 import ImgProject2 from "../../assets/pr2.png";
 import ImgProject3 from "../../assets/pr3.png";
@@ -50,11 +50,17 @@ const Home = () => {
 
         {/* Image Section */}
         <div className="md:w-1/3 w-full h-auto flex items-center justify-center">
-          <div className="relative w-full aspect-square rounded-full glow-boder">
-          <div className="absolute inset-0 rounded-full border-[2px] border-transparent animate-rotate-border"></div>
-          <img src={Profile} alt="Foto de perfil"  className='w-full h-full rounded-full object-contain object-center relative scale-120 bottom-0.5  z-index-10'/>
-          </div>
-        </div>
+  <div className="relative w-full aspect-square rounded-full glow-border">
+    <div className="absolute inset-0 rounded-full border-[2px] border-transparent animate-rotate-border"></div>
+    <img 
+      src={Profile}  alt="Foto de perfil"  className='absolute rounded-full object-cover' 
+      style={{ width: 'calc(100% - 0.5cm)', height: 'calc(100% - 0.5cm)', top: '0.3cm', left: '0.3cm' }}
+    />
+  </div>
+</div>
+
+
+
       </div>
 
        {/*Top Highlights */}

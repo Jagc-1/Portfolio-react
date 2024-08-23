@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import Layout from '../../components/layout/Layout';
-import AboutImg from '../../assets/about.png';
+import AboutImg from '../../assets/Profile.png';
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { LiaHandPointer } from 'react-icons/lia';
