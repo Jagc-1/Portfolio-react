@@ -41,7 +41,6 @@ const Home = () => {
               Resume <HiOutlineDownload />
             </Link>
 
-
             <Link  to="/me"  className="text-base text-neutral-500 hover:text-green-500 font-mc flex items-center gap-x-1.5 ease-in-out duration-300 group">
               Read More <GoArrowUpRight className='text-xl group-hover:rotate-45 ease-in-out duration-500' />
             </Link>

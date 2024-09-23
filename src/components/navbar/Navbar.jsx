@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Logo Section */}
       <div className="flex items-center ml-4">
         <img  src={Logo}  alt="Logo" 
-          className="logo w-16 h-auto" // Aplica la clase logo aquí
+          className="logo w-16 h-auto" 
         />
       </div>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
 
         {/* GitHub Icon */}
         <Link
-          to={"https://github.com/Jagc-1"} 
+          to={"https://github.com/XanthusCode"} 
           className="w-8 h-8 rounded-full bg-neutral-900 hover:bg-neutral-900/40 flex items-center justify-center text-neutral-400 text-lg hover:text-neutral-500 ease-in-out duration-300"
         >
           <FaGithub />
