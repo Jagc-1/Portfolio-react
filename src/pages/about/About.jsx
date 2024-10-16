@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../../components/layout/Layout';
 import AboutImg from '../../assets/Profile.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll'; 
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { LiaHandPointer } from 'react-icons/lia';
 import JohanCard from '../../components/johan/JohanCard';
@@ -30,11 +30,7 @@ const About = () => {
                 Mi objetivo es contribuir a iniciativas que no solo alcancen sus metas, sino que también mejoren la vida
                 de las personas.
               </p>
-
-
             </div>
-
-            
           </div>
 
           {/* Hire Section */}
@@ -42,10 +38,12 @@ const About = () => {
               <p className="md:text-lg text-sm text-neutral-400 font-normal">
                 ¿Interesado en colaborar? ¡Contáctame!
               </p>
-              <a href="#contact" className="flex items-center gap-x-2 md:text-lg text-base text-neutral-500 group-hover:text-green-600 font-normal ease-in-out duration-300">
-    Hire Me 
-    <FaArrowRightLong className="text-xl group-hover:translate-x-1 ease-in-out duration-500" />
-  </a>
+              <Link to='contact' smooth={true} duration={200} className="flex items-center gap-x-2 md:text-lg text-base text-neutral-500 hover:text-green-600 font-normal ease-in-out duration-300">
+              Hire Me 
+              <FaArrowRightLong className="text-xl hover:translate-x-1 ease-in-out duration-500" />
+            </Link>
+
+
           </div>
         </div>
 
@@ -90,8 +88,8 @@ const About = () => {
 
 
         {/* Contact Section */}
-        <div  id="contact" className="space-y-4">
-          <h1 className="text-3xl text-neutral-200 font-bold">Contactame</h1>
+        <div id='contact'  className="space-y-4">
+          <h1  className="text-3xl text-neutral-200 font-bold">Contactame</h1>
           <div className="space-y-3">
             <div className="flex items-center gap-x-3">
               <LiaHandPointer className="text-lg text-green-400 font-normal rotate-90" />

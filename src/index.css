@@ -13,6 +13,11 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -63,15 +68,38 @@
   }
 }
 
-/* Estilo por defecto para el logo */
+
 .logo {
-  display: block; /* Muestra el logo por defecto en pantallas mayores a 600px */
+  display: block; 
 }
+
+.slider-container {
+  position: relative;  
+  overflow: hidden;   
+}
+
+/* Sombra en los lados */
+.slider-container::before,
+.slider-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;         
+  height: 100%;        
+  z-index: 1;           
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent); 
+}
+
+.slider-container::after {
+  right: 0;            
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); 
+}
+
 
 /* Oculta el logo en pantallas de 600px o menos */
 @media (max-width: 1124px) {
   .logo {
-    display: none; /* Oculta el logo en pantallas de 600px o menos */
+    display: none;
   }
 }
 
